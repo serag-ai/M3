@@ -1,0 +1,32 @@
+deepspeed  ./M3D/custom_train.py \
+    --version v0 \
+    --model_name_or_path microsoft/Phi-3-mini-4k-instruct \
+    --model_type phi3 \
+    --lora_enable True \
+    --vision_tower vit3d \
+    --pretrain_mm_mlp_adapter ./mm_projector.bin \
+    --pretrain_vision_model ./pretrained_ViT.bin \
+    --data_root PATH_TO_TRAINING_DATASET_DIRECTORY \
+    --amos_train_cap_data_path PATH_TO_TRAINING_CSV_FILE \
+    --amos_validation_cap_data_path PATH_TO_VALIDATION_CSV_FILE \
+    --bf16 True \
+    --output_dir ./output/LaMed-finetune-0000 \
+    --num_train_epochs 2 \
+    --per_device_train_batch_size 4 \
+    --per_device_eval_batch_size 4 \
+    --gradient_accumulation_steps 1 \
+    --evaluation_strategy "steps" \
+    --eval_accumulation_steps 1 \
+    --eval_steps 0.1 \
+    --save_strategy "epoch" \
+    --save_steps 1 \
+    --save_total_limit 10 \
+    --learning_rate 5e-4 \
+    --weight_decay 0. \
+    --warmup_ratio 0.03 \
+    --lr_scheduler_type "cosine" \
+    --logging_steps 0.001 \
+    --gradient_checkpointing False \
+    --dataloader_pin_memory True\
+    --dataloader_num_workers 32 \
+    --report_to none
