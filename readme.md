@@ -18,7 +18,8 @@ To run the demo, follow these steps:
    ```
 
 2. **Generate Report** :
-   ```python3 -u demo_csv.py \
+   ```sh
+   python3 -u demo_csv.py \
    --model_name_or_path PATH_TO_MERGED_WEIGHTS \
    --data_root PATH_TO_IMAGES \
    --amos_validation_cap_data_path PATH_TO_CSV_FILE \
