@@ -26,7 +26,7 @@ To run the demo, follow these steps:
    --output_dir PATH_TO_OUTPUT_DIR
    ```
 
-Replace the `model_name_or_path` with the finetuned weights. Weights for *M3* are available through [serag-ai/M3-AMOS](https://huggingface.co/serag-ai/M3-AMOS).
+Replace the `model_name_or_path` with the finetuned weights. Weights for *M3* are available through [Huggingface](https://huggingface.co/serag-ai/M3-AMOS).
 ## Dataset Format 
 
 For this work, we have converted the data into CSV files. The format for training captions should be as follows:
