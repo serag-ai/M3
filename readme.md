@@ -8,6 +8,11 @@
 
 Medical imaging is indispensable for diagnosis, with abdominal imaging playing a pivotal role in generating medical reports and informing clinical decision-making. Recent works in artificial intelligence (AI), particularly in multimodal approaches such as vision-language models, have demonstrated significant potential to enhance medical image analysis by seamlessly integrating visual and textual data. While 2D imaging has been the main focus of many studies, the enhanced spatial detail and volumetric consistency offered by 3D images, such as CT scans, remain relatively underexplored. This gap underscores the need for innovative approaches to unlock the potential of 3D imaging in clinical workflows. In this study, we utilized a multimodal AI pipeline, Phi3-V, to address 2 key challenges in abdominal imaging: generating clinically coherent medical reports from 3D CT images and performing visual question answering based on these images.
 
+This repository contains the code and models introduced in our paper:  
+> **"M3: multimodal artificial intelligence for medical report generation and visual question answering from 3D abdominal CT scans"**  
+> *Hosseini, Abdullah, Ahmed Ibrahim, and Ahmed Serag. BJR|Artificial Intelligence (2025)*
+> *[Download Paper](https://academic.oup.com/bjrai/article/2/1/ubaf011/8205672)*
+
 ## Demo 
 
 To run the demo, follow these steps:
