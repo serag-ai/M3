@@ -45,6 +45,22 @@ For this work, we have converted the data into CSV files. The format for trainin
 - **caption**: Text description of the image 
 - **label**: organ of the entry
 
+## Citation
+If you use the code or data from this repository, please cite [our paper]([https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2024.1454441/full](https://academic.oup.com/bjrai/article-pdf/doi/10.1093/bjrai/ubaf011/63790755/ubaf011.pdf)): 
+
+```bibtex
+@article{hosseini2025m3,
+  title={M3: multimodal artificial intelligence for medical report generation and visual question answering from 3D abdominal CT scans},
+  author={Hosseini, Abdullah and Ibrahim, Ahmed and Serag, Ahmed},
+  journal={BJR| Artificial Intelligence},
+  volume={2},
+  number={1},
+  pages={ubaf011},
+  year={2025},
+  publisher={Oxford University Press}
+}
+```
+
 ## Acknowledgement
 We appreciate open source projects including: 
 [LLaVA](https://github.com/haotian-liu/LLaVA) and 
